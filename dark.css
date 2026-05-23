@@ -1,0 +1,183 @@
+/* dark.css */
+
+html.dark body,
+html.dark input,
+html.dark select,
+html.dark textarea {
+  /* background-color: #1e1e1e !important;*/
+  background-color: #202324 !important;
+  color: #e0e0e0 !important;
+}
+
+html.dark a {
+  color: #e0e0e0 !important;
+}
+
+html.dark a:hover,
+html.dark a:focus,
+html.dark a:active {
+  color: #888888 !important;
+}
+
+html.dark article .title {
+  color: #e0e0e0 !important;
+}
+
+html.dark header,
+html.dark footer,
+html.dark article,
+html.dark .container,
+html.dark #main-navigation {
+  background-color: #202324 !important;
+}
+
+html.dark .the-content a {
+  color: #999999 !important;
+}
+
+html.dark .the-content a:hover {
+  text-decoration: underline;
+}
+
+html.dark article .the-content p,
+html.dark .commentlist .comment,
+html.dark .commentlist .pingback,
+html.dark .comment-meta,
+html.dark #respond form label,
+html.dark .wppb-bookmarks,
+html.dark #main-navigation ul li a {
+  color: #CFCFCF !important;
+}
+
+html.dark input,
+html.dark textarea {
+  background-color: #2c2c2c !important;
+  border-color: #444 !important;
+  color: #eee !important;
+}
+
+html.dark pre,
+html.dark code {
+  background: #2d2d2d !important;
+  color: #e0e0e0 !important;
+}
+
+html.dark .commentlist .pingback,
+html.dark .bypostauthor {
+  background-color: #3B3F42 !important;
+}
+
+html.dark input[type="submit"],
+html.dark input[type="submit"]:hover,
+html.dark input[type="submit"]:focus {
+  background: #333 !important;
+  color: #f0f0f0 !important;
+  border: 1px solid #666 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+
+/* Flicker fix for Flickr Justified Gallery */
+html.dark .flickr-justified-gallery-wrapper,
+html.dark .justified-gallery {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* =========================
+   Dark-mode Comments Styling
+   ========================= */
+
+/* Outer comment wrapper: no border, background same as page */
+html.dark .commentlist .comment,
+html.dark .commentlist .pingback,
+html.dark .commentlist .bypostauthor {
+  background-color: #202324 !important;  /* match main page background */
+  border: none !important;               /* remove outer border */
+  padding: 0;
+  margin-bottom: 40px;
+  box-shadow: none !important;
+}
+
+/* Inner comment box: normal comments */
+html.dark .commentlist .comment .comment-body,
+html.dark .commentlist .pingback .comment-body {
+  background-color: #2A2D30 !important;  /* normal inner comment background */
+  padding: 15px;
+  border-radius: 6px;
+  color: #CFCFCF !important;            /* text color */
+}
+
+/* Inner comment box: author comments */
+html.dark .commentlist .bypostauthor .comment-body {
+  background-color: #3B3F42 !important;  /* slightly lighter than normal comments */
+  padding: 15px;
+  border-radius: 6px;
+  color: #e0e0e0 !important;            /* text color for author */
+}
+
+/* Comment text metadata (author, date, etc.) */
+html.dark .comment-meta,
+html.dark .commentlist .comment .comment-meta {
+  color: #CFCFCF !important;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+html.dark .commentlist .comment-body p a {
+  color: #999999 !important;
+}
+
+html.dark .commentlist .comment-body p a:hover {
+  text-decoration: underline;
+}
+
+/* Reply form inputs & textarea */
+html.dark #respond textarea,
+html.dark #respond input[type="text"],
+html.dark #respond input[type="email"] {
+  background-color: #2A2D30 !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+html.dark #respond input[type="submit"] {
+  background-color: #2A2D30 !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+html.dark #respond input[type="submit"]:hover {
+  background-color: #56504e !important; /* slightly darker on hover */
+}
+
+/* Dark mode fixes for WPPB bookmarks */
+html.dark .wppb-description,
+html.dark .wppb-footer,
+html.dark .wppb-date {
+  color: #cfcfcf !important;  /* match other body text */
+}
+
+html.dark .wppb-header a {
+  color: #999 !important;  /* consistent link color */
+}
+
+html.dark .wppb-footer i {
+  color: #888888 !important;     /* icon color slightly dimmer */
+}
+
+html.dark abbr.wppb-date {
+  color: #999 !important;       /* softer gray */
+  border-bottom: none !important; /* remove default underline */
+  cursor: default;              /* prevents the pointer underline “tooltip” look */
+}

@@ -1,0 +1,1 @@
+/usr/home/muppet/slugs/slugs.php
