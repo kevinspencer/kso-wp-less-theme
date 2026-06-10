@@ -637,7 +637,7 @@ article .post-meta a:hover {
 }
 article .the-content a {
   /*font-weight: 900; */
-  text-decoration: none;
+  text-decoration: underline;
 }
 article .the-content p {
   color: #787878;
