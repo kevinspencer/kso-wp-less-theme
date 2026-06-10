@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const toggleBtn = document.getElementById("theme-toggle");
-  const icon = document.getElementById("theme-icon");
+  const lightIcon = document.querySelector(".theme-icon.light-icon");
+  const darkIcon = document.querySelector(".theme-icon.dark-icon");
   const linkId = "dark-css";
-  const darkHref = "/posts/wp-content/themes/Less/dark.css"; 
+  const darkHref = "/posts/wp-content/themes/Less/dark.css";
 
-  // This function now targets the <html> element and updates the state
-  function updateState(theme) {
+  function updateIcons(theme) {
     document.documentElement.classList.toggle("dark", theme === "dark");
-    icon.textContent = theme === "dark" ? "🌞" : "🌙";
+    lightIcon.style.display = theme === "dark" ? "block" : "none";
+    darkIcon.style.display = theme === "dark" ? "none" : "block";
     localStorage.setItem("theme", theme);
   }
 
@@ -19,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
       link.href = darkHref;
       document.head.appendChild(link);
     }
-    updateState("dark");
+    updateIcons("dark");
   }
 
   function removeDarkStyles() {
     const link = document.getElementById(linkId);
     if (link) link.remove();
-    updateState("light");
+    updateIcons("light");
   }
 
   function toggleTheme() {
@@ -40,10 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleBtn.addEventListener("click", toggleTheme);
   }
 
-  // Ensure the correct state is reflected on page load
   if (document.documentElement.classList.contains("dark")) {
     applyDarkStyles();
-  } else {
-    icon.textContent = "🌙";
   }
 });
