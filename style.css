@@ -132,7 +132,7 @@ section {
 html {
   margin: 0;
   padding: 0;
-  font-size: 65.625%;
+  font-size: 72.188%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
 
   -webkit-text-size-adjust: 100%;
@@ -349,9 +349,9 @@ select {
   margin: 0;
   background: #ffffff;
   font-family: Ubuntu;
-  line-height: 26.64px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  line-height: 29.3px;
+  font-size: 19.8px;
+  font-size: 1.98rem;
 }
 /* typography
 -------------------------------------------------------------- */
@@ -368,23 +368,23 @@ h6 {
 }
 h1 {
   /*line-height: 71.03999999999999px;*/
-  font-size: 34;
-  font-size: 3.4rem;
+  font-size: 37.4px;
+  font-size: 3.74rem;
 }
 h2 {
-  line-height: 50.32px;
-  font-size: 34px;
-  font-size: 3.4rem;
+  line-height: 55.35px;
+  font-size: 37.4px;
+  font-size: 3.74rem;
 }
 h3 {
-  line-height: 41.44px;
-  font-size: 28px;
-  font-size: 2.8rem;
+  line-height: 45.58px;
+  font-size: 30.8px;
+  font-size: 3.08rem;
 }
 h4 {
-  line-height: 26.64px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  line-height: 29.3px;
+  font-size: 19.8px;
+  font-size: 1.98rem;
 }
 hr {
   background-color: #ccc;
@@ -438,8 +438,8 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 16.5px;
+  font-size: 1.65rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   padding: 1.6em;
@@ -534,8 +534,8 @@ header #brand h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   color: #565656;
-  line-height: 23.68px;
-  font-size: 19px;
+  line-height: 26.05px;
+  font-size: 20.9px;
   /*font-size: 1.6rem;*/
   margin: 0;
   padding: 0;
@@ -563,7 +563,7 @@ header nav ul li {
 }
 header nav ul li a {
   color: #888888;
-  font-size: 17px;
+  font-size: 18.7px;
 }
 
 header .container {
@@ -602,8 +602,8 @@ article .title {
   color: #404040;
   margin-top: 20px;
   margin-bottom: 10px;
-  line-height: 24.24px;
-  font-size: 24px;
+  line-height: 26.66px;
+  font-size: 26.4px;
   /* font-size: 3.8rem; */
   font-weight: normal;
 }
@@ -616,15 +616,15 @@ article .title a:hover {
   text-decoration: underline;
 }
 article .post-meta {
-  line-height: 18.64px;
+  line-height: 20.5px;
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 16.5px;
   color: #787878;
 }
 article .tag-meta {
   /* line-height: 18.64px; */
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 16.5px;
   color: #787878;
 }
 article .post-meta a {
@@ -774,7 +774,7 @@ footer {
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
-  font-size: 15px;
+  font-size: 16.5px;
   /*background: #f5f5f5; */
   color: #787878;
 }
@@ -878,7 +878,7 @@ html[xmlns] .clearfix {
     display: block;
     text-decoration: none;
     padding: 7px 5px 7px 16px;
-    font-size: 14px;
+    font-size: 15.4px;
     color: #787878 !important;
     /*border-left: 1px solid #ccc;*/
 }
