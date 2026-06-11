@@ -938,7 +938,7 @@ html[xmlns] .clearfix {
   right: 1rem;
   z-index: 1000;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: transparent;
   color: #333;
   transition: background 0.3s ease, color 0.3s ease;
   display: flex;
@@ -958,7 +958,7 @@ html[xmlns] .clearfix {
 }
 
 html.dark #theme-toggle {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: transparent;
   color: #fff;
 }
 
