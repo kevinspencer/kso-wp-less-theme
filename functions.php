@@ -25,14 +25,14 @@ register_nav_menus(
 function less_scripts()  { 
 
 	// theme styles
-	wp_enqueue_style( 'less-style', get_template_directory_uri() . '/style.css', '10000', 'all' );
+	wp_enqueue_style( 'less-style', get_template_directory_uri() . '/style.css', array(), filemtime( get_template_directory() . '/style.css' ), 'all' );
 
 	// and our dark guy - that didn't sound right
-	wp_enqueue_style( 'less-style', get_template_directory_uri() . '/dark.css', '10000', 'all' );
-	
+	wp_enqueue_style( 'less-dark-style', get_template_directory_uri() . '/dark.css', array(), filemtime( get_template_directory() . '/dark.css' ), 'all' );
+
 	// add fitvid
 	wp_enqueue_script( 'less-fitvid', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), LESS_VERSION, true );
-	
+
 	// add theme scripts
 	wp_enqueue_script( 'less', get_template_directory_uri() . '/js/theme.min.js', array(), LESS_VERSION, true );
   
@@ -44,7 +44,7 @@ function enqueue_dark_mode_toggle() {
         'theme-toggle',
         get_template_directory_uri() . '/theme-toggle.js',
         array(),
-        '1.1',
+        filemtime( get_template_directory() . '/theme-toggle.js' ),
         true
     );
 }
