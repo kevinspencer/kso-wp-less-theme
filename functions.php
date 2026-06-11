@@ -44,7 +44,7 @@ function enqueue_dark_mode_toggle() {
         'theme-toggle',
         get_template_directory_uri() . '/theme-toggle.js',
         array(),
-        null,
+        '1.1',
         true
     );
 }
